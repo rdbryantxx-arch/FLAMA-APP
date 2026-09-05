@@ -1,0 +1,213 @@
+# PROYECTO: Flama
+
+## 1. VISIÓN GENERAL
+Flama es una aplicación social +18 con estética futurista e iconografía propia (no imitar Instagram ni TikTok visualmente).
+- Feed principal estilo TikTok (vídeos verticales a pantalla completa al abrir la app).
+- Publicación de fotos y vídeos.
+- Chat privado (mensajes gratis, videollamadas de pago con tokens).
+- Lives con regalos, comentarios y salas de hasta 10 personas.
+- Perfiles con contenido público, solo fotos, solo vídeos y contenido exclusivo por suscripción.
+- Todo el contenido y la responsabilidad es del usuario. La app es estrictamente +18.
+
+Nombre de la app: Flama
+Público objetivo: +18
+Estilo visual: futurista, moderno, con “alma” y personalidad propia. Colores principales: tonos oscuros con acentos de fuego/naranja-rojo y neones sutiles. Cada apartado y cada acción debe tener su propia identidad visual que encaje perfectamente con el universo de Flama. La aplicación debe estar bien estructurada y adaptarse a diferentes tipos de público.
+
+## 2. REGLAS LEGALES Y DE CONTENIDO (OBLIGATORIO)
+- La app es exclusivamente para mayores de 18 años.
+- El usuario es el único responsable del contenido que sube, comparte o transmite.
+- Incluir en el registro y en los términos de uso textos claros de responsabilidad del usuario y de edad mínima.
+- Bloqueo de capturas de pantalla en el chat privado por defecto (con opción del usuario de permitir descarga).
+
+## 3. ESTRUCTURA DE NAVEGACIÓN PRINCIPAL
+1. Feed principal (Home) → estilo TikTok (vídeos verticales).
+2. Explorar → contenido de usuarios que no se siguen (fotos + vídeos).
+3. Crear / Publicar → fotos y vídeos.
+4. Live → acceso a lives y creación de lives/salas.
+5. Chat → mensajería privada.
+6. Perfil → propio y de otros usuarios.
+
+## 4. FUNCIONALIDADES DETALLADAS
+
+### 4.1 Feed Principal (Home)
+- Al abrir la app se muestra un feed de vídeos verticales a pantalla completa.
+- Al desplazarse hacia abajo aparecen más vídeos de diferentes usuarios (no repetibles).
+- Sistema algorítmico basado en interacción: si el usuario interactúa con un perfil (like, comentario, seguimiento, tiempo de visualización), el algoritmo prioriza más contenido de ese usuario.
+- Acciones en cada vídeo: like, comentar, compartir, guardar.
+- En los comentarios: cualquier usuario puede responder a un comentario o darle like.
+
+### 4.2 Perfil de Usuario
+- Mostrar: foto de perfil, descripción, enlaces, seguidores, seguidos y **Amigos** (seguimiento mutuo).
+- El usuario puede editar: foto de perfil, descripción y enlaces.
+- Sistema inteligente de enlaces: al agregar un enlace el sistema detecta de qué plataforma es (Instagram, Twitter/X, YouTube, TikTok, web, etc.) y muestra un icono limpio y elegante. Al tocar el icono se abre la dirección correspondiente.
+- Pestañas: Todo / Solo Fotos / Solo Vídeos / Exclusivo (suscripción).
+- El apartado “Exclusivo” solo es visible si el creador tiene ≥ 1.000 seguidores. Si el visitante no está suscrito, aparece bloqueado.
+- Opción de perfil público o privado (accesible desde el menú de tres puntitos o configuración).
+- Insignia de verificación: se obtiene mediante suscripción de pago (incluye 500 tokens).
+
+**Tarjeta de Saldo visible en el perfil:**
+- El usuario tiene una tarjeta de saldo propia de Flama que muestra de forma clara:
+  - Saldo de Tokens
+  - Saldo de Monedas de regalos
+  - Ganancias acumuladas (de regalos recibidos)
+- Menú de tres puntitos / Configuración del perfil:
+  - Poner perfil privado o público
+  - Pagos y Retiro (abre la tarjeta de saldo de Flama)
+  - Otras configuraciones
+
+### 4.3 Explorar
+- Grid de fotos y vídeos de usuarios que el usuario actual no sigue.
+
+### 4.4 Chat Privado
+- Completamente privado.
+- Los mensajes de texto, fotos, vídeos y notas de voz **NO consumen tokens** (son gratuitos).
+- Únicamente las **videollamadas** consumen tokens (se cobran cada 3 minutos).
+- Al registrarse el usuario recibe 100 tokens gratuitos (para videollamadas).
+- Se pueden enviar **regalos también por mensaje**.
+- Por defecto las capturas de pantalla están bloqueadas.
+- El usuario que envía el contenido puede activar la opción de permitir descarga.
+- Historial completo de mensajes.
+
+### 4.5 Lives y Salas
+- Cualquier usuario puede iniciar un Live (sin mínimo de seguidores).
+- Espectadores pueden comentar y enviar regalos.
+- Regalos:
+  - Básicos → solo se muestran
+  - Medianos → con animación
+  - Premium → animación de alto impacto + efecto de dopamina
+  - Todos los regalos son infinitos, llevan el nombre del emisor y pueden destacarse.
+- Salas: hasta 10 personas. El creador tiene control total (mutear, desmutear y expulsar).
+
+**Sistema de ganancias en Live:**
+- Cada regalo tiene un costo en Monedas.
+- Cuando un usuario recibe regalos durante su Live, las ganancias se van reflejando en tiempo real.
+- Durante el Live el creador tiene una opción visible para **chequear cuánto lleva ganado** en ese Live.
+- Al finalizar el Live, las ganancias se suman automáticamente al saldo de la tarjeta del perfil.
+
+**Recarga desde el Live:**
+- Si el usuario intenta enviar un regalo y no tiene suficientes Monedas, aparece un aviso elegante:
+  “No tienes suficientes Monedas para enviar este regalo. ¿Quieres recargar ahora?”
+- Botones: “Cancelar” y “Recargar”.
+- Al pulsar “Recargar” se abre el modal de compra **sin salir del Live**.
+- Una vez completada la compra, el usuario vuelve al Live y puede enviar el regalo de inmediato.
+
+### 4.6 Sistema de Tokens, Monedas, Pagos y Retiros
+- **Tokens** → solo se usan para videollamadas.
+- **Monedas de regalos** → se usan para enviar regalos (tanto en Lives como por mensaje).
+- Al comprar Monedas se pueden recibir Tokens extra como bonus.
+- Cada moneda y token debe tener identidad visual y carisma propio de Flama.
+
+**Compra de Monedas y Tokens:**
+- Accesible desde el perfil (tarjeta de saldo) y desde el Live.
+- Diseño propio de Flama (futurista, no copiar TikTok).
+- Paquetes predefinidos + opción de **Personalizar** la cantidad.
+- Métodos de pago aceptados:
+  - Cualquier tarjeta de crédito/débito
+  - Binance y criptomonedas
+  - Apple Pay / Google Pay
+- Badges de “Pago seguro”.
+
+**Retiros:**
+- Solo los usuarios que hayan recibido regalos pueden solicitar retiro.
+- Desde la tarjeta de saldo del perfil (opción “Pagos y Retiro”).
+- El sistema debe permitir retirar las ganancias acumuladas de forma clara y segura.
+
+### 4.7 Notificaciones
+El sistema debe enviar notificaciones en los siguientes casos:
+- Nuevo mensaje
+- Nuevo seguidor
+- Alguien que sigues está en Live
+- Recibiste un like
+- Recibiste un comentario
+- Recibiste un regalo
+
+## 5. STACK TECNOLÓGICO RECOMENDADO (OBLIGATORIO)
+
+### Frontend / App Móvil
+- **Flutter** (Dart)
+
+### Backend
+- **NestJS** (Node.js + TypeScript)
+- Base de datos: **PostgreSQL**
+- Cache y colas: **Redis**
+- Autenticación: **Supabase Auth** o **Firebase Auth**
+- Almacenamiento de medios: **Cloudflare R2** o **AWS S3**
+- Tiempo real (chat + lives): **Socket.io** + **LiveKit** (o Agora)
+- Notificaciones push: **Firebase Cloud Messaging**
+
+### Pagos y Suscripciones
+- **RevenueCat** + **Stripe**
+- Integración con pasarelas que acepten tarjetas internacionales y criptomonedas (Binance Pay o similar)
+
+### Otros
+- Estado global: **Riverpod** o **Bloc**
+- Reproductor de vídeo: **video_player** + **chewie** o **better_player**
+- Animaciones de regalos: **Rive** o **Lottie**
+- Bloqueo de capturas: APIs nativas (FLAG_SECURE en Android y secure field en iOS)
+
+### Arquitectura
+- Clean Architecture (Presentation / Domain / Data)
+- Módulos claros: Auth, Users, Feed, Chat, Live, Payments, Tokens/Monedas, Notifications
+
+## 6. ORDEN DE DESARROLLO RECOMENDADO (Fases)
+
+### Fase 0 – Fundación
+- Crear repositorio, estructura Flutter + NestJS.
+- Icono de la app y branding base (colores fuego/neón, tipografía, estilo futurista).
+- Autenticación + registro (+18 + términos de responsabilidad).
+- Sistema básico de Tokens (100 tokens al registrarse).
+- Tarjeta de saldo básica.
+
+### Fase 1 – Núcleo Social
+- Feed principal de vídeos con algoritmo de interacción (no repetible).
+- Perfiles de usuario (foto, descripción, enlaces inteligentes, seguidores, seguidos, Amigos).
+- Publicar fotos y vídeos.
+- Like, comentar (con respuestas y likes a comentarios), compartir, guardar.
+- Explorar.
+- Notificaciones básicas.
+
+### Fase 2 – Monetización y Privacidad
+- Sistema completo de Tokens y Monedas.
+- Pantalla de Recarga (paquetes + personalizar + tarjetas + criptomonedas).
+- Chat privado (mensajes gratis + regalos por mensaje + videollamadas de pago).
+- Bloqueo de capturas + opción de permitir descarga.
+- Perfil privado/público.
+- Suscripción de verificación.
+- Sistema de retiros (solo para quien recibe regalos).
+
+### Fase 3 – Lives y Contenido Exclusivo
+- Lives con comentarios y regalos.
+- Contador de ganancias en tiempo real durante el Live + resumen al finalizar.
+- Flujo de recarga desde el Live cuando no hay suficientes Monedas.
+- Salas de hasta 10 personas con controles del creador.
+- Apartado de contenido exclusivo por suscripción (≥ 1.000 seguidores).
+- Gestión de planes de suscripción a creadores.
+
+### Fase 4 – Pulido y Alma
+- Animaciones de regalos de alto impacto.
+- Identidad visual única de Tokens, Monedas y tarjeta de saldo.
+- Optimización del algoritmo de feed.
+- Notificaciones completas y bien diseñadas.
+- Revisión final de textos legales y experiencia de usuario.
+
+## 7. INSTRUCCIONES PARA EL DESARROLLO AUTOMATIZADO
+- Empezar siempre por la Fase 0.
+- Respetar el stack tecnológico definido (Flutter + NestJS).
+- Cada ciclo de trabajo debe avanzar de forma incremental y documentar lo completado.
+- Mantener la estética futurista y con personalidad propia en **todos** los apartados (especialmente tarjeta de saldo, avisos del Live, recarga y notificaciones).
+- No copiar la interfaz de Instagram ni de TikTok.
+- Separar claramente Tokens (solo videollamadas) de Monedas de regalos.
+- El flujo de ganancias del Live → saldo del perfil y el flujo de recarga sin salir del Live son obligatorios y deben ser fluidos.
+- Los mensajes son gratuitos. Solo las videollamadas consumen tokens.
+- Se pueden enviar regalos tanto en Lives como por mensaje.
+- Preparar la parte de pagos para tarjetas y criptomonedas (Binance).
+- Solo los usuarios que reciben regalos pueden retirar.
+
+## 8. ENTREGABLES ESPERADOS
+- Icono de la app.
+- Diseño de interfaz con “alma” en cada apartado.
+- Código funcional por fases (Flutter + NestJS).
+- Documentación de cada fase.
+- Textos legales de +18 y responsabilidad del usuario.
+
+Empieza por la Fase 0 usando el stack definido y avanza de forma ordenada.
