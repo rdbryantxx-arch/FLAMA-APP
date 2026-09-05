@@ -1,0 +1,27 @@
+name: FLAMA Agent
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-flama:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install openai
+      - name: Run FLAMA
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -c "
+          import openai, os
+          client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+          with open('PROMPT_FLAMA.txt') as f: prompt = f.read()
+          res = client.chat.completions.create(model='gpt-4o', messages=[{'role':'user','content':prompt}])
+          with open('outputs/respuesta.txt','w') as f: f.write(res.choices[0].message.content)
+          print('Listo ✅')"
