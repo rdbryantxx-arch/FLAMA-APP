@@ -1,0 +1,46 @@
+name: FLAMA Agent
+on:
+  schedule:
+    - cron: '0 *'  # Cada 1 hora
+  workflow_dispatch: # Para correrlo manual
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Leer el Prompt de Flama
+        id: prompt
+        run: echo "PROMPT<<EOF" >> $GITHUB_OUTPUT && cat PROMPT_FLAMA.txt >> $GITHUB_OUTPUT && echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Preguntarle a ChatGPT que desarrolle
+        run: |
+          curl https://api.openai.com/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.CHATGPT_KEY }}" \
+            -d @- << EOF
+          {
+            "model": "gpt-4o",
+            "messages": [
+              {"role": "system", "content": "${{ steps.prompt.outputs.PROMPT }}"},
+              {"role": "user", "content": "Es hora de trabajar. Empieza por la Fase 0 del documento. Entrega el código de la estructura base en Flutter y NestJS. Documenta lo que hiciste."}
+            ],
+            "max_tokens": 4000
+          }
+          EOF
+            > response.json
+          
+      - name: Guardar lo que dijo ChatGPT
+        run: |
+          mkdir -p outputs
+          echo "Ejecucion: $(date)" >> outputs/LOG.txt
+          mv response.json outputs/response-$(date +%Y%m%d-%H%M).json
+          
+      - name: Subir cambios a GitHub
+        run: |
+          git config --global user.name "FLAMA-BOT"
+          git config --global user.email "bot@flama.ai"
+          git add outputs/
+          git commit -m "FLAMA-BOT: Nueva entrega de código $(date)" || echo "No hay cambios"
+          git push
